@@ -68,7 +68,7 @@ def receive_alert(payload: AlertPayload):
         }
 
     except requests.exceptions.RequestException as net_err:
-        logger.error(f"📡 Telegram Network Failure for {payload.event_id}: {net_err}")
+        logger.error(f"📡 Telegram Network Failure for {payload.event_id}: Connection failed to Telegram Gateway.")
         raise HTTPException(
             status_code=status.HTTP_502_BAD_GATEWAY,
             detail=f"Failed to reach Telegram servers: {net_err}"
