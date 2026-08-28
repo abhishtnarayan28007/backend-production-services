@@ -1,0 +1,9 @@
+====================================
+FINAL REPORT
+------------------------------------
+DATE/TIME : 2026-08-28 16:00:33
+Total raw posts harvested : 100
+Total clean posts retained : 100
+Average Content Length : 160.64
+Pipeline Status : SUCCESS
+=========================================
