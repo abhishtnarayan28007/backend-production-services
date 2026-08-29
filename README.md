@@ -53,3 +53,24 @@ git clone https://github.com/abhishtnarayan28007/Python-Automation-Gauntlet.git
 cd Python-Automation-Gauntlet/capstone_projects
 ```
 
+## 🌐 Live Service
+
+The application is deployed on Railway and active 24/7.
+
+* **Base URL**: `https://backend-production-services-production.up.railway.app`
+* **Health Check**: `GET /`
+* **Alert Webhook**: `POST /webhook/alert`
+
+### 🧪 Webhook Example Payload
+
+Send a `POST` request to `https://backend-production-services-production.up.railway.app/webhook/alert` with the following JSON body:
+
+```json
+{
+  "event_id": "EVT-1234",
+  "source": "Stripe",
+  "priority": "HIGH",
+  "message": "High volume of failed transactions."
+}
+```
+
