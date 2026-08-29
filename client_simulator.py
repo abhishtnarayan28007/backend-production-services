@@ -1,7 +1,7 @@
 import requests
 import time
 import random
-API_URL = "http://127.0.0.1:8000/webhook/alert"
+API_URL = "https://backend-production-services-production.up.railway.app/webhook/alert"
 SOURCES = ["Stripe", "AuthService", "Database", "PaymentGateway", "KubernetesNode"]
 PRIORITIES = ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
 
