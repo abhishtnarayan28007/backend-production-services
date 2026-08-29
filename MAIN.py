@@ -33,7 +33,7 @@ def send_telegram_alert(payload: AlertPayload):
         f"🌐 *Source:* `{payload.source}`\n\n"
         f"💬 *Message:* {payload.message}"
     )
-    url = f"https://api.BROKENtelegram.org/bot{BOT_TOKEN}/sendMessage"
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     response = requests.post(url, json={"chat_id": CHAT_ID, "text": text, "parse_mode": "Markdown"}, timeout=3)
     return response.ok
 
